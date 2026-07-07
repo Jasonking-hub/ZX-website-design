@@ -10,6 +10,17 @@ const requiredFiles = [
   "app/layout.tsx",
   "app/not-found.tsx",
   "lib/cn.ts",
+  "components/site-header.tsx",
+  "components/site-footer.tsx",
+  "components/section.tsx",
+  "components/motion-reveal.tsx",
+  "components/animated-number.tsx",
+  "components/hero-visual.tsx",
+  "components/product-card.tsx",
+  "components/spec-table.tsx",
+  "components/industry-card.tsx",
+  "components/cta-band.tsx",
+  "components/resource-card.tsx",
 ];
 
 const missing = requiredFiles.filter((file) => !existsSync(file));
