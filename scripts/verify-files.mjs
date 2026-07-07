@@ -17,8 +17,10 @@ const requiredFiles = [
   "components/animated-number.tsx",
   "components/hero-visual.tsx",
   "components/product-card.tsx",
+  "components/product-filter.tsx",
   "components/spec-table.tsx",
   "components/industry-card.tsx",
+  "components/inquiry-form.tsx",
   "components/cta-band.tsx",
   "components/resource-card.tsx",
 ];

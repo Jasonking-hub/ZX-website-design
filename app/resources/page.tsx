@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { InquiryForm } from "@/components/inquiry-form";
 import { ResourceCard } from "@/components/resource-card";
 import { Section } from "@/components/section";
 import { resourceCards } from "@/data/resources";
@@ -24,16 +25,12 @@ export default function ResourcesPage() {
         </div>
       </Section>
 
-      <Section id="selection-form" title="产品选型入口" intro="请准备负载、行程、速度、加速度、安装空间和应用行业信息，下一步表单组件将提供前端校验与成功演示。">
-        <div className="rounded-[28px] border border-dashed border-industrial/35 bg-white p-8 text-sm leading-7 text-ink/70">
-          选型表单区域：姓名、公司、手机、邮箱、应用行业、负载、行程、速度 / 加速度要求、需要的产品类型、备注。
-        </div>
+      <Section id="selection-form" title="产品选型入口" intro="请填写负载、行程、速度、加速度、安装空间和应用行业信息。当前表单为前端校验与提交成功演示，不会发送真实网络请求。">
+        <InquiryForm variant="selection" />
       </Section>
 
       <Section id="drawing-request" className="bg-blueprint/60" title="图纸 / CAD 申请" intro="如需产品尺寸图、CAD、安装接口资料，请提交需求，由工程人员确认后提供。">
-        <div className="rounded-[28px] border border-navy/10 bg-white p-8 text-sm leading-7 text-ink/70">
-          图纸申请将通过资源中心表单或联系页面提交，当前阶段展示前端流程。
-        </div>
+        <ResourceCard resource={resourceCards[2]} />
       </Section>
     </>
   );

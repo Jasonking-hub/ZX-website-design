@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CtaBand } from "@/components/cta-band";
-import { ProductCard } from "@/components/product-card";
+import { ProductFilter } from "@/components/product-filter";
 import { Section } from "@/components/section";
 import { products } from "@/data/products";
 
@@ -18,11 +18,7 @@ export default function ProductsPage() {
         title="覆盖直线、旋转、管型与定制平台的直驱产品体系"
         intro="产品内容依据公司产品手册整理。无法确认的参数不做编造，详情页会提示参考产品手册或联系工程师。"
       >
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {products.map((product) => (
-            <ProductCard key={product.slug} product={product} />
-          ))}
-        </div>
+        <ProductFilter products={products} />
       </Section>
       <CtaBand
         title="需要确认具体型号、推力或安装尺寸？"

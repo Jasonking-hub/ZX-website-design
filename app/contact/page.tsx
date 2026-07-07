@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { InquiryForm } from "@/components/inquiry-form";
 import { Section } from "@/components/section";
 import { siteInfo } from "@/data/site";
 
@@ -28,12 +29,7 @@ export default function ContactPage() {
             <Image src={siteInfo.qrCode} alt="中欣自动化联系二维码" width={520} height={520} className="rounded-2xl" />
           </div>
         </div>
-        <div className="rounded-[32px] border border-dashed border-industrial/35 bg-white p-8">
-          <p className="text-xl font-semibold text-navy">联系表单</p>
-          <p className="mt-4 text-sm leading-7 text-ink/70">
-            表单字段：姓名、公司名称、联系电话、邮箱、需求类型、应用行业、需求描述。下一步将接入前端校验与提交成功演示。
-          </p>
-        </div>
+        <InquiryForm variant="contact" />
       </div>
     </Section>
   );
