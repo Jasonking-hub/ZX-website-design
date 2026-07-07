@@ -20,7 +20,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="group flex items-center gap-3" onClick={() => setOpen(false)}>
           <span className="grid h-10 w-10 place-items-center rounded-2xl bg-navy text-sm font-semibold text-white shadow-blueprint">
-            ZX
+            中欣
           </span>
           <span>
             <span className="block text-base font-semibold tracking-tight text-navy">{siteInfo.shortName}</span>

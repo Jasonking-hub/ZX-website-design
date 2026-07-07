@@ -1,6 +1,5 @@
 export const siteInfo = {
   name: "深圳中欣自动化科技有限公司",
-  englishName: "SHENZHEN ZHONGXIN AUTOMATION TECHNOLOGY CO.,LTD",
   shortName: "中欣自动化",
   foundedYear: 2017,
   phone: "15973130940",

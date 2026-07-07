@@ -10,7 +10,7 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-3">
             <span className="grid h-11 w-11 place-items-center rounded-2xl bg-white text-sm font-semibold text-navy">
-              ZX
+              中欣
             </span>
             <div>
               <p className="font-semibold">{siteInfo.name}</p>

@@ -18,7 +18,7 @@ export function HeroVisual() {
         <div className="absolute bottom-10 left-10 right-10 grid gap-3 rounded-3xl border border-white/15 bg-navy/88 p-5 text-white backdrop-blur md:grid-cols-3">
           {["直线运动", "旋转定位", "定制平台"].map((item) => (
             <div key={item} className="border-l border-electric/50 pl-4">
-              <p className="text-xs text-white/58">motion rail</p>
+              <p className="text-xs text-white/58">运动轨迹</p>
               <p className="mt-1 text-sm font-semibold">{item}</p>
             </div>
           ))}
