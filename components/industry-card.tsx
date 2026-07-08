@@ -7,7 +7,7 @@ type IndustryCardProps = {
 
 export function IndustryCard({ industry }: IndustryCardProps) {
   return (
-    <article className="rounded-[28px] border border-navy/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-blueprint">
+    <article className="flex h-full flex-col rounded-[28px] border border-navy/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-blueprint">
       <p className="text-sm font-semibold text-industrial">{industry.title}</p>
       <div className="mt-5 grid gap-4">
         <div>
@@ -26,9 +26,11 @@ export function IndustryCard({ industry }: IndustryCardProps) {
           </span>
         ))}
       </div>
-      <Link href={industry.href} className="mt-6 inline-flex text-sm font-semibold text-industrial hover:text-navy">
-        查看应用说明
-      </Link>
+      <div className="mt-auto pt-6">
+        <Link href={industry.href} className="inline-flex text-sm font-semibold text-industrial hover:text-navy">
+          查看应用说明
+        </Link>
+      </div>
     </article>
   );
 }

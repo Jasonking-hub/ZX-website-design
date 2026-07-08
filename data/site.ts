@@ -4,7 +4,7 @@ export const siteInfo = {
   foundedYear: 2017,
   phone: "15973130940",
   email: "21711708@qq.com",
-  address: "深圳市宝安区沙井街道新桥第二工业区白沙路39号二楼",
+  address: "深圳市光明区马田街道新庄社区将富路10号C栋701",
   manualHref: "/downloads/zhongxin-direct-drive-product-manual.pdf",
   qrCode: "/images/contact/qr-code.png",
 };
@@ -115,7 +115,7 @@ export const homeStats = [
 export const statsDisclaimer = "以上数据根据公司产品手册整理，具体参数以正式规格书和双方确认方案为准。";
 
 export const companyProfile = [
-  "深圳中欣自动化科技有限公司位于广东省深圳市宝安区沙井街道，成立于 2017 年，是集各类直驱电机研发、定制、生产、销售及服务为一体的技术型企业。",
+  "深圳中欣自动化科技有限公司位于广东省深圳市光明区马田街道，成立于 2017 年，是集各类直驱电机研发、定制、生产、销售及服务为一体的技术型企业。",
   "公司产品覆盖直线电机、力矩电机、音圈电机、直线模组和高精密大理石平台等，面向精密设备提供高速、高精度、高响应的运动部件及定制化方案。",
   "中欣自动化坚持专业、稳健的工程协作方式，围绕客户设备结构、运动指标和集成需求，协助完成型号选择、结构匹配和方案验证。",
 ];
