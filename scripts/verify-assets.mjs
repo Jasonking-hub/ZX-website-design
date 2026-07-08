@@ -15,6 +15,8 @@ const assets = [
   "public/images/drawings/custom-stage-drawing.jpg",
   "public/images/contact/qr-code.png",
   "public/images/brand/hero-composite.jpg",
+  "public/videos/zhongxin-motion-primary.mp4",
+  "public/videos/zhongxin-motion-secondary.mp4",
   "public/downloads/zhongxin-direct-drive-product-manual.pdf",
 ];
 

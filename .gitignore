@@ -11,6 +11,7 @@ tsconfig.tsbuildinfo
 # Local brainstorming/server artifacts
 .superpowers/
 tmp/
+material/
 
 # OS/editor noise
 .DS_Store
