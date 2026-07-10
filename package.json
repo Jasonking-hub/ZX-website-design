@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/verify-hero-video.mjs",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
@@ -12,8 +12,9 @@
     "verify:content": "node scripts/verify-content.mjs",
     "verify:routes": "node scripts/verify-routes.mjs",
     "verify:assets": "node scripts/verify-assets.mjs",
+    "verify:cache": "node scripts/verify-netlify-cache.mjs",
     "verify:forms": "tsx scripts/verify-form-validation.ts",
-    "verify": "tsc --noEmit && node scripts/verify-files.mjs && node scripts/verify-content.mjs && node scripts/verify-routes.mjs && node scripts/verify-assets.mjs && tsx scripts/verify-form-validation.ts"
+    "verify": "tsc --noEmit && node scripts/verify-files.mjs && node scripts/verify-content.mjs && node scripts/verify-routes.mjs && node scripts/verify-assets.mjs && node scripts/verify-netlify-cache.mjs && tsx scripts/verify-form-validation.ts"
   },
   "dependencies": {
     "framer-motion": "^11.0.0",

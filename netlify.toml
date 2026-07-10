@@ -1,3 +1,18 @@
 [build]
   command = "pnpm run build"
   publish = "out"
+
+[[headers]]
+  for = "/videos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/brand/hero-video-primary-v2.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/brand/hero-video-secondary-v2.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
